@@ -7,7 +7,8 @@
   python3 publish.py story <image_or_video_url>
   python3 publish.py carousel <caption_file> <image_url> [<image_url> ...]
 
-Токен: переменная окружения JUMYSKER_INSTAGRAM_TOKEN или строка JUMYSKER_INSTAGRAM_TOKEN=… в
+Токен: секрет облачного окружения для graph.instagram.com (прокси сам добавляет заголовок
+Authorization: Bearer …), либо переменная JUMYSKER_INSTAGRAM_TOKEN, либо строка JUMYSKER_INSTAGRAM_TOKEN=… в
 ~/.claude/channels/jumysker/.env (права 600). Значение токена нигде не печатается.
 Перед любой публикацией проверяет, что токен от аккаунта @jumysker_ai, и печатает ссылку на пост.
 """
@@ -26,14 +27,15 @@ def token():
         for line in open(path):
             if line.startswith("JUMYSKER_INSTAGRAM_TOKEN="):
                 return line.split("=", 1)[1].strip()
-    sys.exit("NO_TOKEN: задайте JUMYSKER_INSTAGRAM_TOKEN в переменных окружения")
+    return ""   # токен подставит прокси окружения (секрет для graph.instagram.com)
 
 
 TOKEN = token()
 
 
 def call(method, path, retries=2, **params):
-    params["access_token"] = TOKEN
+    if TOKEN:
+        params["access_token"] = TOKEN
     data = urllib.parse.urlencode(params).encode()
     url = path if path.startswith("http") else f"{API}/{path}"
     for attempt in range(retries + 1):
@@ -43,8 +45,12 @@ def call(method, path, retries=2, **params):
             with urllib.request.urlopen(req, timeout=120) as r:
                 return json.load(r)
         except urllib.error.HTTPError as e:
-            body = e.read().decode(errors="ignore").replace(TOKEN, "***")[:500]
-            sys.exit(f"API error {e.code}: {body}")
+            body = e.read().decode(errors="ignore")
+            if TOKEN:
+                body = body.replace(TOKEN, "***")
+            if e.code in (400, 401) and not TOKEN and "access token" in body.lower():
+                sys.exit("NO_TOKEN: прокси не подставил токен — проверьте секрет для graph.instagram.com")
+            sys.exit(f"API error {e.code}: {body[:500]}")
         except (urllib.error.URLError, TimeoutError) as e:
             if method == "POST" or attempt == retries:
                 raise
