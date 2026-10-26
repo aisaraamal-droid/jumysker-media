@@ -48,7 +48,10 @@ def call(method, path, retries=2, **params):
             body = e.read().decode(errors="ignore")
             if TOKEN:
                 body = body.replace(TOKEN, "***")
-            if e.code in (400, 401) and not TOKEN and "access token" in body.lower():
+            if not TOKEN and "cannot parse access token" in body.lower():
+                sys.exit("BAD_TOKEN: секрет для graph.instagram.com подставляется, но это не токен Instagram "
+                         "(нужен IGAA… из Generate token; не App ID, не App Secret и не «Bearer» дважды)")
+            if not TOKEN and "active access token must be used" in body.lower():
                 sys.exit("NO_TOKEN: прокси не подставил токен — проверьте секрет для graph.instagram.com")
             sys.exit(f"API error {e.code}: {body[:500]}")
         except (urllib.error.URLError, TimeoutError) as e:
