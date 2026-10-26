@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+source/_build/html/
+source/_build/*.json
+source/_build/gen/work/
+source/posts/
+source/reels/
+source/stories/
+.env
+*.env
+source/profile/
+source/plan/

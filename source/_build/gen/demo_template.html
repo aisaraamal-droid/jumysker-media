@@ -1,0 +1,131 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  :root { --ink:#101735; --muted:#5d6788; --blue:#0860ff; --blue-deep:#064ddd; --green:#0abe84; --border:#deebfa; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #f4f8ff; }
+  body { font-family: Inter, sans-serif; color: var(--ink); }
+  #stage { position: absolute; inset: 0; overflow: hidden;
+    background: radial-gradient(900px 800px at 90% 5%, #dfeaff 0%, rgba(223,234,255,0) 60%),
+                radial-gradient(800px 700px at 0% 100%, #e3f9f0 0%, rgba(227,249,240,0) 60%), #f6f9ff; }
+  .brand { position: absolute; top: 96px; left: 72px; display: flex; align-items: center; gap: 16px; font: 800 44px Inter; letter-spacing: -0.02em; }
+  .brand svg { width: 58px; height: 58px; }
+  .title { position: absolute; top: 200px; left: 72px; right: 72px; font: 800 76px/1.04 'Inter Display', Inter; letter-spacing: -0.03em; }
+  .title em { font-style: normal; color: var(--blue); }
+  .host { position: absolute; top: 84px; right: 72px; display: flex; align-items: center; gap: 16px;
+    background: #fff; border: 2px solid var(--border); border-radius: 999px; padding: 8px 26px 8px 8px; box-shadow: 0 14px 40px rgba(16,23,53,.08); }
+  .host .pic { width: 76px; height: 76px; border-radius: 50%; overflow: hidden; background: #dfeaff; flex: none; }
+  .host .pic img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 32%; transform: scale(1.6); }
+  .host b { font: 700 30px Inter; display: block; }
+  .host small { font: 500 22px Inter; color: var(--muted); }
+  .phone { position: absolute; left: 72px; right: 72px; top: 400px; height: 960px; background: #fff; border-radius: 56px;
+    border: 2px solid var(--border); box-shadow: 0 40px 100px rgba(16,23,53,.12); overflow: hidden; }
+  .chead { display: flex; align-items: center; gap: 22px; padding: 30px 36px; border-bottom: 2px solid #eef3fb; }
+  .ava { width: 84px; height: 84px; border-radius: 26px; background: linear-gradient(150deg, #2f7bff, #064ddd); display: grid; place-items: center; color: #fff; }
+  .ava svg { width: 46px; height: 46px; }
+  .chead b { font: 800 38px Inter; display: block; }
+  .chead small { font: 500 26px Inter; color: var(--green); }
+  .sample { margin-left: auto; font: 600 22px Inter; color: var(--muted); background: #f1f5fc; border-radius: 999px; padding: 8px 18px; }
+  .msgs { position: absolute; top: 146px; left: 0; right: 0; bottom: 130px; padding: 34px 32px; display: flex; flex-direction: column; gap: 22px; }
+  .msg { max-width: 84%; font: 500 37px/1.36 Inter; padding: 26px 30px; border-radius: 34px; opacity: 0; transform: translateY(24px); white-space: pre-line; }
+  .msg.u { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+  .msg.b { align-self: flex-start; background: #f2f6fd; border: 2px solid #e3ebf8; border-bottom-left-radius: 10px; }
+  .dots { align-self: flex-start; background: #f2f6fd; border: 2px solid #e3ebf8; border-radius: 34px; padding: 24px 30px; display: flex; gap: 12px; align-items: center; opacity: 0; font: 500 26px Inter; color: var(--muted); }
+  .dots i { width: 14px; height: 14px; border-radius: 50%; background: #9db4dc; display: inline-block; }
+  .doc { align-self: flex-start; display: flex; align-items: center; gap: 22px; background: #fff; border: 2px solid var(--border); border-radius: 30px; padding: 22px 26px; width: 82%; opacity: 0; transform: translateY(24px); box-shadow: 0 16px 40px rgba(16,23,53,.07); }
+  .doc .ic { width: 76px; height: 76px; border-radius: 22px; background: #e8f0ff; color: var(--blue); display: grid; place-items: center; flex: none; }
+  .doc .ic svg { width: 40px; height: 40px; }
+  .doc b { font: 700 32px Inter; display: block; }
+  .doc small { font: 500 26px Inter; color: var(--muted); }
+  .doc .ok { margin-left: auto; background: #e2f8ef; color: #07936a; font: 700 24px Inter; padding: 10px 18px; border-radius: 999px; white-space: nowrap; }
+  .input { position: absolute; left: 28px; right: 28px; bottom: 28px; height: 92px; border-radius: 46px; background: #f2f6fd; border: 2px solid #e3ebf8;
+    display: flex; align-items: center; padding: 0 30px; font: 500 32px Inter; color: var(--muted); overflow: hidden; white-space: nowrap; }
+  .input .txt { color: var(--ink); overflow: hidden; text-overflow: ellipsis; direction: ltr; flex: 1; }
+  .input .caret { width: 3px; height: 40px; background: var(--blue); margin-left: 4px; }
+  .input .send { width: 64px; height: 64px; border-radius: 50%; background: var(--blue); margin-left: 16px; display: grid; place-items: center; color: #fff; flex: none; }
+  .input .send svg { width: 32px; height: 32px; }
+  .sub { position: absolute; left: 110px; right: 110px; bottom: 420px; text-align: center; z-index: 5; }
+  .sub span { display: inline; font: 800 50px/1.5 Inter; color: #fff; background: var(--ink); padding: 6px 18px; border-radius: 14px;
+    box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  /* финальная карточка */
+  #hostseg { position: absolute; inset: 0; z-index: 4; background: #dfeaff; }
+  #hostseg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #hostseg .htitle { position: absolute; left: 0; right: 0; top: 250px; text-align: center; }
+  #hostseg .htitle span { display: inline-block; font: 800 74px/1.08 'Inter Display', Inter; letter-spacing: -0.03em; color: var(--ink);
+    background: rgba(255,255,255,.94); padding: 22px 40px; border-radius: 36px; box-shadow: 0 24px 60px rgba(16,23,53,.16); }
+  #hostseg .htitle em { font-style: normal; color: var(--blue); }
+  #hostseg .tag { position: absolute; left: 72px; top: 1190px; display: flex; align-items: center; gap: 14px; background: var(--blue); color: #fff;
+    font: 700 34px Inter; padding: 14px 28px 14px 18px; border-radius: 999px; box-shadow: 0 16px 40px rgba(8,96,255,.35); }
+  #hostseg .tag svg { width: 40px; height: 40px; }
+  #end { position: absolute; inset: 0; background: linear-gradient(165deg, #1a6dff 0%, #0860ff 35%, #064ddd 75%, #0a3fb8 100%); color: #fff; opacity: 0; }
+  #end .ring { position: absolute; border-radius: 50%; background: rgba(255,255,255,.08); }
+  #end .brand { color: #fff; }
+  #end .face { position: absolute; left: 50%; top: 220px; width: 400px; height: 400px; margin-left: -200px; border-radius: 50%; overflow: hidden; border: 10px solid rgba(255,255,255,.9); box-shadow: 0 40px 80px rgba(0,20,80,.35); background: #dfeaff; }
+  #end .face img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 32%; transform: scale(1.6); transform-origin: 50% 50%; }
+  #end h2 { position: absolute; left: 80px; right: 80px; top: 680px; text-align: center; font: 800 72px/1.06 'Inter Display', Inter; letter-spacing: -0.03em; }
+  #end p { position: absolute; left: 80px; right: 80px; top: 990px; text-align: center; font: 600 40px Inter; opacity: .9; }
+  #end .btn { position: absolute; left: 50%; top: 1080px; transform: translateX(-50%); background: #fff; color: var(--blue); font: 800 56px Inter; padding: 34px 70px; border-radius: 999px; box-shadow: 0 30px 60px rgba(0,20,80,.3); white-space: nowrap; }
+  #end small { position: absolute; left: 0; right: 0; top: 1250px; text-align: center; font: 600 34px Inter; opacity: .85; }
+</style></head>
+<body><div id="stage">
+  <div class="brand">__LOGO__<span>jumysker</span></div>
+  <div class="host"><div class="pic"><img src="__PORTRAIT__"></div><div><b>__HOSTNAME__</b><small>__HOSTROLE__</small></div></div>
+  <div class="title">__HOOK__</div>
+  <div class="phone">
+    <div class="chead"><div class="ava">__ICON__</div><div><b>__WHO__</b><small>__STATUS__</small></div><span class="sample">__SAMPLE__</span></div>
+    <div class="msgs" id="msgs">
+      <div class="msg u" id="m0">__M0__</div>
+      <div class="dots" id="dots"><i></i><i></i><i></i>&nbsp;__TYPING__</div>
+      <div class="msg b" id="m1">__M1__</div>
+      <div class="doc" id="doc"><div class="ic">__DOCICON__</div><div><b>__DOCT__</b><small>__DOCS__</small></div><span class="ok">__DOCOK__</span></div>
+    </div>
+    <div class="input"><span class="txt" id="typed"></span><span class="caret" id="caret"></span><span id="ph">__INPUT__</span><span class="send">__SENDICON__</span></div>
+  </div>
+  <div id="hostseg"><img id="hostimg" src=""><div class="htitle"><span>__HOOKHOST__</span></div><div class="tag">__LOGOW__<span>__HOSTNAME__ · Jumysker</span></div></div>
+  <div class="sub" id="sub"><span id="subtxt"></span></div>
+  <div id="end">
+    <div class="ring" style="width:900px;height:900px;left:-300px;top:-260px"></div>
+    <div class="ring" style="width:700px;height:700px;right:-260px;bottom:-180px"></div>
+    <div class="brand">__LOGOW__<span>jumysker</span></div>
+    <div class="face"><img src="__PORTRAIT__"></div>
+    <h2>__ENDT__</h2><p>__ENDS__</p><div class="btn">__ENDB__</div><small>__ENDSM__</small>
+  </div>
+</div>
+<script>
+const T = __TIMELINE__;   // секунды: начало набора, отправка, ответ, документ, финал; субтитры
+const USER = document.getElementById('m0').textContent;
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+const ease = x => 1 - Math.pow(1 - clamp(x, 0, 1), 3);
+function show(el, t0, t) { const p = ease((t - t0) / 0.35); el.style.opacity = t >= t0 ? p : 0; el.style.transform = `translateY(${(1 - p) * 24}px)`; }
+window.render = function (t) {
+  // набор текста в поле ввода
+  const typed = document.getElementById('typed'), ph = document.getElementById('ph'), caret = document.getElementById('caret');
+  if (t < T.typeStart) { typed.textContent = ''; ph.style.display = ''; caret.style.display = 'none'; }
+  else if (t < T.send) {
+    const n = Math.floor(USER.length * clamp((t - T.typeStart) / (T.send - T.typeStart - 0.25), 0, 1));
+    typed.textContent = USER.slice(Math.max(0, n - 40), n); ph.style.display = 'none'; caret.style.display = (Math.floor(t * 3) % 2) ? 'none' : '';
+  } else { typed.textContent = ''; ph.style.display = ''; caret.style.display = 'none'; }
+  show(document.getElementById('m0'), T.send, t);
+  const dots = document.getElementById('dots');
+  dots.style.display = (t >= T.send + 0.4 && t < T.reply) ? 'flex' : 'none';
+  dots.style.opacity = 1;
+  [...dots.querySelectorAll('i')].forEach((d, i) => d.style.transform = `translateY(${Math.sin(t * 9 - i * 0.9) * -6}px)`);
+  const m1 = document.getElementById('m1'); m1.style.display = t >= T.reply ? '' : 'none'; show(m1, T.reply, t);
+  const doc = document.getElementById('doc'); doc.style.display = t >= T.doc ? '' : 'none'; show(doc, T.doc, t);
+  // финальная карточка
+  const end = document.getElementById('end'); const pe = ease((t - T.end) / 0.45);
+  end.style.opacity = t >= T.end ? pe : 0; end.style.transform = `translateY(${(1 - pe) * 80}px)`;
+  // субтитры
+  const s = T.subs.find(x => t >= x.s && t < x.e);
+  document.getElementById('subtxt').textContent = s ? s.t : '';
+  document.getElementById('sub').style.display = s ? '' : 'none';
+  };
+window.renderHost = function (t, visible) {
+  document.getElementById('hostseg').style.display = visible ? '' : 'none';
+  const s = T.subsA.find(x => t >= x.s && t < x.e);
+  document.getElementById('subtxt').textContent = s ? s.t : '';
+  document.getElementById('sub').style.display = s ? '' : 'none';
+};
+window.setFrame = src => new Promise(res => { const im = document.getElementById('hostimg'); im.onload = () => res(); im.src = src; });
+window.render(0);
+</script></body></html>

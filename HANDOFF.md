@@ -1,6 +1,6 @@
 # Как вести Instagram @jumysker_ai (для сессии Claude)
 
-Аккаунт: **@jumysker_ai** (бизнес, ID 17841470627397578), приложение Meta «jumysker_ai», вход через Instagram.
+Аккаунт: **@jumysker_ai** (бизнес), приложение Meta «jumysker_ai», вход через Instagram.
 Файлы и расписание — в этом репозитории. Публикация — `scripts/publish.py` и `scripts/today.py`, только стандартная библиотека Python.
 
 ## 1. Токен
@@ -33,9 +33,22 @@
 - «Стоп» — сразу остановиться и ничего не публиковать до нового разрешения.
 - Вручную в приложении (API не умеет): стикер-ссылка в сторис, музыка Instagram, закрепление постов (закрепить p01–p03), правка подписи.
 
-## 5. Что ещё не готово
+## 5. Рилсы r3–r8 — собрать накануне даты
 
-Рилсы r3–r8 (`ready: false` в расписании) — есть сценарии, но нет видео. Их собирают накануне даты:
-ведущий Ерлан (RU) или Дана (KZ) — Seedance 2.0 mini без звука, голос ElevenLabs, сборка 1080×1920.
-Исходники и пайплайн — в архиве `jumysker-instagram.zip` у владельца (папка `_build/gen`). Попроси загрузить его в сессию.
-Готовый ролик кладётся в `content/reels/`, в `schedule.json` ставится `"ready": true`.
+Сценарии и демо — в `source/_build/gen/reels_hosted.py`, ведущие — `source/avatar/`. Голос — только ElevenLabs
+(ID голосов берутся из reelio-bot или из `JUMYSKER_VOICE_MALE` / `JUMYSKER_VOICE_FEMALE`), Seedance — только картинка, без звука.
+Ключи ElevenLabs и BytePlus подставляет прокси окружения. Один клип ведущего ≈ $0,6.
+
+```bash
+cd source/_build/gen
+python3 make_host.py r3           # голос a/b/c (ElevenLabs) + клип ведущего (Seedance, без звука) в work/
+python3 build_reel.py r3          # -> source/reels/r3-erlan.mp4 (1080×1920, субтитры, −14 LUFS)
+cd .. && python3 release.py r3    # -> content/reels, сторис-анонс, "ready": true в schedule.json
+```
+
+Перед выпуском посмотри кадры и проверь речь; затем `git add content && git commit && git push`.
+
+## 6. Секреты
+
+В репозитории нет и не должно быть токенов, ключей и паролей: он открытый. Токен Instagram — только в настройках
+окружения, ключи сервисов подставляет прокси. Перед каждым push проверяй, что в изменениях нет `IGAA…`, `EAA…` и похожих строк.
