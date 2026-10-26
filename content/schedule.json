@@ -1,0 +1,344 @@
+[
+ {
+  "id": "p01",
+  "date": "2026-10-28",
+  "kind": "carousel",
+  "title": "Знакомьтесь: Jumysker",
+  "lang": "RU",
+  "files": [
+   "posts/p01/slide-01.jpg",
+   "posts/p01/slide-02.jpg",
+   "posts/p01/slide-03.jpg",
+   "posts/p01/slide-04.jpg",
+   "posts/p01/slide-05.jpg",
+   "posts/p01/slide-06.jpg",
+   "posts/p01/slide-07.jpg"
+  ],
+  "caption": "posts/p01/caption.txt",
+  "story": "stories/p01-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r1",
+  "date": "2026-10-29",
+  "kind": "reel",
+  "title": "Счёт клиенту за минуту",
+  "lang": "RU",
+  "host": "Ерлан",
+  "files": [
+   "reels/r1-erlan.mp4"
+  ],
+  "cover": "reels/r1-erlan-cover.jpg",
+  "caption": "reels/r1-caption.txt",
+  "story": "stories/r1-story.mp4",
+  "ready": true
+ },
+ {
+  "id": "p02",
+  "date": "2026-10-30",
+  "kind": "carousel",
+  "title": "Как начать: 7 дней бесплатно",
+  "lang": "RU",
+  "files": [
+   "posts/p02/slide-01.jpg",
+   "posts/p02/slide-02.jpg",
+   "posts/p02/slide-03.jpg",
+   "posts/p02/slide-04.jpg",
+   "posts/p02/slide-05.jpg",
+   "posts/p02/slide-06.jpg",
+   "posts/p02/slide-07.jpg",
+   "posts/p02/slide-08.jpg"
+  ],
+  "caption": "posts/p02/caption.txt",
+  "story": "stories/p02-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r2",
+  "date": "2026-10-31",
+  "kind": "reel",
+  "title": "Jumysker қазақша сөйлейді",
+  "lang": "KZ",
+  "host": "Дана",
+  "files": [
+   "reels/r2-dana.mp4"
+  ],
+  "cover": "reels/r2-dana-cover.jpg",
+  "caption": "reels/r2-caption.txt",
+  "story": "stories/r2-story.mp4",
+  "ready": true
+ },
+ {
+  "id": "p03",
+  "date": "2026-11-01",
+  "kind": "carousel",
+  "title": "Сколько стоит AI-сотрудник",
+  "lang": "RU",
+  "files": [
+   "posts/p03/slide-01.jpg",
+   "posts/p03/slide-02.jpg",
+   "posts/p03/slide-03.jpg",
+   "posts/p03/slide-04.jpg",
+   "posts/p03/slide-05.jpg",
+   "posts/p03/slide-06.jpg",
+   "posts/p03/slide-07.jpg"
+  ],
+  "caption": "posts/p03/caption.txt",
+  "story": "stories/p03-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "p04",
+  "date": "2026-11-02",
+  "kind": "carousel",
+  "title": "КП, которое дочитают",
+  "lang": "RU",
+  "files": [
+   "posts/p04/slide-01.jpg",
+   "posts/p04/slide-02.jpg",
+   "posts/p04/slide-03.jpg",
+   "posts/p04/slide-04.jpg",
+   "posts/p04/slide-05.jpg",
+   "posts/p04/slide-06.jpg"
+  ],
+  "caption": "posts/p04/caption.txt",
+  "story": "stories/p04-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r3",
+  "date": "2026-11-03",
+  "kind": "reel",
+  "title": "Сайт для салона из одного сообщения",
+  "lang": "RU",
+  "host": "Ерлан",
+  "files": [
+   "reels/r3-erlan.mp4"
+  ],
+  "cover": "reels/r3-erlan-cover.jpg",
+  "caption": "reels/r3-caption.txt",
+  "story": "stories/r3-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "p05",
+  "date": "2026-11-04",
+  "kind": "carousel",
+  "title": "Помощник недели: ИИ-бухгалтер",
+  "lang": "RU",
+  "files": [
+   "posts/p05/slide-01.jpg",
+   "posts/p05/slide-02.jpg",
+   "posts/p05/slide-03.jpg",
+   "posts/p05/slide-04.jpg",
+   "posts/p05/slide-05.jpg",
+   "posts/p05/slide-06.jpg",
+   "posts/p05/slide-07.jpg"
+  ],
+  "caption": "posts/p05/caption.txt",
+  "story": "stories/p05-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "p06",
+  "date": "2026-11-06",
+  "kind": "carousel",
+  "title": "Клиент говорит «дорого»",
+  "lang": "RU",
+  "files": [
+   "posts/p06/slide-01.jpg",
+   "posts/p06/slide-02.jpg",
+   "posts/p06/slide-03.jpg",
+   "posts/p06/slide-04.jpg",
+   "posts/p06/slide-05.jpg",
+   "posts/p06/slide-06.jpg"
+  ],
+  "caption": "posts/p06/caption.txt",
+  "story": "stories/p06-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r4",
+  "date": "2026-11-07",
+  "kind": "reel",
+  "title": "Прайсты қазақшаға — бір минутта",
+  "lang": "KZ",
+  "host": "Дана",
+  "files": [
+   "reels/r4-dana.mp4"
+  ],
+  "cover": "reels/r4-dana-cover.jpg",
+  "caption": "reels/r4-caption.txt",
+  "story": "stories/r4-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "p07",
+  "date": "2026-11-09",
+  "kind": "carousel",
+  "title": "Договор: 7 пунктов до подписи",
+  "lang": "RU",
+  "files": [
+   "posts/p07/slide-01.jpg",
+   "posts/p07/slide-02.jpg",
+   "posts/p07/slide-03.jpg",
+   "posts/p07/slide-04.jpg",
+   "posts/p07/slide-05.jpg",
+   "posts/p07/slide-06.jpg",
+   "posts/p07/slide-07.jpg"
+  ],
+  "caption": "posts/p07/caption.txt",
+  "story": "stories/p07-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "p08",
+  "date": "2026-11-11",
+  "kind": "carousel",
+  "title": "Помощник недели: личный турагент",
+  "lang": "RU",
+  "files": [
+   "posts/p08/slide-01.jpg",
+   "posts/p08/slide-02.jpg",
+   "posts/p08/slide-03.jpg",
+   "posts/p08/slide-04.jpg",
+   "posts/p08/slide-05.jpg",
+   "posts/p08/slide-06.jpg"
+  ],
+  "caption": "posts/p08/caption.txt",
+  "story": "stories/p08-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r5",
+  "date": "2026-11-12",
+  "kind": "reel",
+  "title": "Ответ на плохой отзыв за 20 секунд",
+  "lang": "RU",
+  "host": "Ерлан",
+  "files": [
+   "reels/r5-erlan.mp4"
+  ],
+  "cover": "reels/r5-erlan-cover.jpg",
+  "caption": "reels/r5-caption.txt",
+  "story": "stories/r5-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "p09",
+  "date": "2026-11-13",
+  "kind": "carousel",
+  "title": "Вакансия, на которую откликаются",
+  "lang": "RU",
+  "files": [
+   "posts/p09/slide-01.jpg",
+   "posts/p09/slide-02.jpg",
+   "posts/p09/slide-03.jpg",
+   "posts/p09/slide-04.jpg",
+   "posts/p09/slide-05.jpg",
+   "posts/p09/slide-06.jpg"
+  ],
+  "caption": "posts/p09/caption.txt",
+  "story": "stories/p09-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r6",
+  "date": "2026-11-14",
+  "kind": "reel",
+  "title": "Шартқа қол қояр алдында",
+  "lang": "KZ",
+  "host": "Дана",
+  "files": [
+   "reels/r6-dana.mp4"
+  ],
+  "cover": "reels/r6-dana-cover.jpg",
+  "caption": "reels/r6-caption.txt",
+  "story": "stories/r6-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "p10",
+  "date": "2026-11-16",
+  "kind": "carousel",
+  "title": "Как ставить задачу ИИ",
+  "lang": "RU",
+  "files": [
+   "posts/p10/slide-01.jpg",
+   "posts/p10/slide-02.jpg",
+   "posts/p10/slide-03.jpg",
+   "posts/p10/slide-04.jpg",
+   "posts/p10/slide-05.jpg",
+   "posts/p10/slide-06.jpg"
+  ],
+  "caption": "posts/p10/caption.txt",
+  "story": "stories/p10-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r7",
+  "date": "2026-11-17",
+  "kind": "reel",
+  "title": "Клиент пишет «дорого»",
+  "lang": "RU",
+  "host": "Ерлан",
+  "files": [
+   "reels/r7-erlan.mp4"
+  ],
+  "cover": "reels/r7-erlan-cover.jpg",
+  "caption": "reels/r7-caption.txt",
+  "story": "stories/r7-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "p11",
+  "date": "2026-11-18",
+  "kind": "carousel",
+  "title": "Сайт под ключ за 15 000 ₸",
+  "lang": "RU",
+  "files": [
+   "posts/p11/slide-01.jpg",
+   "posts/p11/slide-02.jpg",
+   "posts/p11/slide-03.jpg",
+   "posts/p11/slide-04.jpg",
+   "posts/p11/slide-05.jpg",
+   "posts/p11/slide-06.jpg"
+  ],
+  "caption": "posts/p11/caption.txt",
+  "story": "stories/p11-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "p12",
+  "date": "2026-11-20",
+  "kind": "carousel",
+  "title": "Подписка или оплата за задачи",
+  "lang": "RU",
+  "files": [
+   "posts/p12/slide-01.jpg",
+   "posts/p12/slide-02.jpg",
+   "posts/p12/slide-03.jpg",
+   "posts/p12/slide-04.jpg",
+   "posts/p12/slide-05.jpg",
+   "posts/p12/slide-06.jpg"
+  ],
+  "caption": "posts/p12/caption.txt",
+  "story": "stories/p12-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "r8",
+  "date": "2026-11-21",
+  "kind": "reel",
+  "title": "Жеке турагент",
+  "lang": "KZ",
+  "host": "Дана",
+  "files": [
+   "reels/r8-dana.mp4"
+  ],
+  "cover": "reels/r8-dana-cover.jpg",
+  "caption": "reels/r8-caption.txt",
+  "story": "stories/r8-story.mp4",
+  "ready": false
+ }
+]
