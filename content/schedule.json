@@ -140,6 +140,24 @@
   "ready": true
  },
  {
+  "id": "p13",
+  "date": "2026-11-05",
+  "kind": "carousel",
+  "title": "Нас стало 27: новые помощники",
+  "lang": "RU",
+  "files": [
+   "posts/p13/slide-01.jpg",
+   "posts/p13/slide-02.jpg",
+   "posts/p13/slide-03.jpg",
+   "posts/p13/slide-04.jpg",
+   "posts/p13/slide-05.jpg",
+   "posts/p13/slide-06.jpg"
+  ],
+  "caption": "posts/p13/caption.txt",
+  "story": "stories/p13-story.jpg",
+  "ready": true
+ },
+ {
   "id": "p06",
   "date": "2026-11-06",
   "kind": "carousel",
@@ -173,6 +191,25 @@
   "ready": false
  },
  {
+  "id": "p14",
+  "date": "2026-11-08",
+  "kind": "carousel",
+  "title": "Машина, квартира, ремонт: помощник на месяц",
+  "lang": "RU",
+  "files": [
+   "posts/p14/slide-01.jpg",
+   "posts/p14/slide-02.jpg",
+   "posts/p14/slide-03.jpg",
+   "posts/p14/slide-04.jpg",
+   "posts/p14/slide-05.jpg",
+   "posts/p14/slide-06.jpg",
+   "posts/p14/slide-07.jpg"
+  ],
+  "caption": "posts/p14/caption.txt",
+  "story": "stories/p14-story.jpg",
+  "ready": true
+ },
+ {
   "id": "p07",
   "date": "2026-11-09",
   "kind": "carousel",
@@ -189,6 +226,24 @@
   ],
   "caption": "posts/p07/caption.txt",
   "story": "stories/p07-story.jpg",
+  "ready": true
+ },
+ {
+  "id": "p15",
+  "date": "2026-11-10",
+  "kind": "carousel",
+  "title": "Помощник недели: визовый эксперт",
+  "lang": "RU",
+  "files": [
+   "posts/p15/slide-01.jpg",
+   "posts/p15/slide-02.jpg",
+   "posts/p15/slide-03.jpg",
+   "posts/p15/slide-04.jpg",
+   "posts/p15/slide-05.jpg",
+   "posts/p15/slide-06.jpg"
+  ],
+  "caption": "posts/p15/caption.txt",
+  "story": "stories/p15-story.jpg",
   "ready": true
  },
  {
@@ -258,6 +313,25 @@
   "ready": false
  },
  {
+  "id": "p16",
+  "date": "2026-11-15",
+  "kind": "carousel",
+  "title": "Тендеры, таможня, господдержка",
+  "lang": "RU",
+  "files": [
+   "posts/p16/slide-01.jpg",
+   "posts/p16/slide-02.jpg",
+   "posts/p16/slide-03.jpg",
+   "posts/p16/slide-04.jpg",
+   "posts/p16/slide-05.jpg",
+   "posts/p16/slide-06.jpg",
+   "posts/p16/slide-07.jpg"
+  ],
+  "caption": "posts/p16/caption.txt",
+  "story": "stories/p16-story.jpg",
+  "ready": true
+ },
+ {
   "id": "p10",
   "date": "2026-11-16",
   "kind": "carousel",
@@ -294,7 +368,7 @@
   "id": "p11",
   "date": "2026-11-18",
   "kind": "carousel",
-  "title": "Сайт под ключ за 15 000 ₸",
+  "title": "Сайт под ключ за 9 999 ₸",
   "lang": "RU",
   "files": [
    "posts/p11/slide-01.jpg",
@@ -307,6 +381,21 @@
   "caption": "posts/p11/caption.txt",
   "story": "stories/p11-story.jpg",
   "ready": true
+ },
+ {
+  "id": "r9",
+  "date": "2026-11-19",
+  "kind": "reel",
+  "title": "Машина с рук без переплаты",
+  "lang": "RU",
+  "host": "Ерлан",
+  "files": [
+   "reels/r9-erlan.mp4"
+  ],
+  "cover": "reels/r9-erlan-cover.jpg",
+  "caption": "reels/r9-caption.txt",
+  "story": "stories/r9-story.mp4",
+  "ready": false
  },
  {
   "id": "p12",
@@ -339,6 +428,21 @@
   "cover": "reels/r8-dana-cover.jpg",
   "caption": "reels/r8-caption.txt",
   "story": "stories/r8-story.mp4",
+  "ready": false
+ },
+ {
+  "id": "r10",
+  "date": "2026-11-22",
+  "kind": "reel",
+  "title": "Шенген визасына сауалнама",
+  "lang": "KZ",
+  "host": "Дана",
+  "files": [
+   "reels/r10-dana.mp4"
+  ],
+  "cover": "reels/r10-dana-cover.jpg",
+  "caption": "reels/r10-caption.txt",
+  "story": "stories/r10-story.mp4",
   "ready": false
  }
 ]
