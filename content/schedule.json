@@ -66,13 +66,13 @@
   "cover": "reels/r2-dana-cover.jpg",
   "caption": "reels/r2-caption.txt",
   "story": "stories/r2-story.mp4",
-  "ready": true
+  "ready": false
  },
  {
   "id": "p03",
   "date": "2026-11-01",
   "kind": "carousel",
-  "title": "Сколько стоит AI-сотрудник",
+  "title": "Сколько стоит ИИ-помощник",
   "lang": "RU",
   "files": [
    "posts/p03/slide-01.jpg",
@@ -124,7 +124,7 @@
   "id": "p05",
   "date": "2026-11-04",
   "kind": "carousel",
-  "title": "Помощник недели: ИИ-бухгалтер",
+  "title": "Помощник недели: налоги и зарплата",
   "lang": "RU",
   "files": [
    "posts/p05/slide-01.jpg",
@@ -143,7 +143,7 @@
   "id": "p13",
   "date": "2026-11-05",
   "kind": "carousel",
-  "title": "Нас стало 27: новые помощники",
+  "title": "20 помощников: кого подключить",
   "lang": "RU",
   "files": [
    "posts/p13/slide-01.jpg",
@@ -151,7 +151,8 @@
    "posts/p13/slide-03.jpg",
    "posts/p13/slide-04.jpg",
    "posts/p13/slide-05.jpg",
-   "posts/p13/slide-06.jpg"
+   "posts/p13/slide-06.jpg",
+   "posts/p13/slide-07.jpg"
   ],
   "caption": "posts/p13/caption.txt",
   "story": "stories/p13-story.jpg",
@@ -316,7 +317,7 @@
   "id": "p16",
   "date": "2026-11-15",
   "kind": "carousel",
-  "title": "Тендеры, таможня, господдержка",
+  "title": "Помощник недели: госзакупки",
   "lang": "RU",
   "files": [
    "posts/p16/slide-01.jpg",
