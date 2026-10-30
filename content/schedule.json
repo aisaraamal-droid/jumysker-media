@@ -61,7 +61,7 @@
   "cover": "reels/r3-erlan-cover.jpg",
   "caption": "reels/r3-caption.txt",
   "story": "stories/r3-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r4",
