@@ -6,6 +6,14 @@ def voices():
     или настройки reelio-bot (reelio/config.py: elevenlabs_voice_male / elevenlabs_voice_female)."""
     import os, re
     found = {"male": os.environ.get("JUMYSKER_VOICE_MALE", ""), "female": os.environ.get("JUMYSKER_VOICE_FEMALE", "")}
+    # выбор Арслана (30.10: Дана — голос Kari) хранится вне репозитория, в общей папке проекта
+    env = os.environ.get("JUMYSKER_VOICES_FILE", "/mnt/project-files/jumysker-instagram/voices.env")
+    if os.path.exists(env):
+        for line in open(env, encoding="utf-8"):
+            k, _, v = line.strip().partition("=")
+            who = {"JUMYSKER_VOICE_MALE": "male", "JUMYSKER_VOICE_FEMALE": "female"}.get(k)
+            if who and v and not found[who]:
+                found[who] = v
     cfg = os.path.expanduser(os.environ.get("REELIO_CONFIG", "/home/user/reelio-bot/reelio/config.py"))
     if os.path.exists(cfg):
         text = open(cfg, encoding="utf-8").read()
