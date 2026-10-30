@@ -46,7 +46,7 @@
   "cover": "reels/r11-dana-cover.jpg",
   "caption": "reels/r11-caption.txt",
   "story": "stories/r11-story.mp4",
-  "ready": true
+  "ready": false
  },
  {
   "id": "r3",
