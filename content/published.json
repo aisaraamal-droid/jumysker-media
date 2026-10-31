@@ -1,46 +1,50 @@
 {
- "p01": {
-  "permalink": "https://www.instagram.com/p/De9JZEPoJwr/",
-  "at": "2026-10-26T11:12:33"
- },
- "p01:story": {
-  "permalink": "https://www.instagram.com/stories/jumysker_ai/4016419246506931968",
-  "at": "2026-10-26T11:35:22"
- },
- "r1": {
-  "permalink": "https://www.instagram.com/reel/De_ZLV3ANXv/",
-  "at": "2026-10-27T08:09:06"
- },
- "r1:story": {
-  "permalink": "https://www.instagram.com/stories/jumysker_ai/4017051310755329838",
-  "at": "2026-10-27T08:31:29"
- },
- "r11": {
-  "permalink": "https://www.instagram.com/reel/DfHDfF8Dcgx/",
-  "at": "2026-10-30T07:33:42"
- },
- "r11:story": {
-  "permalink": "https://www.instagram.com/stories/jumysker_ai/4019223513331986140",
-  "at": "2026-10-30T08:27:19"
- },
- "r3": {
-  "permalink": "https://www.instagram.com/reel/DfJqkAtgiWR/",
-  "at": "2026-10-31T07:53:46"
- },
- "r3:story": {
-  "permalink": "https://www.instagram.com/stories/jumysker_ai/4019942630292019108",
-  "at": "2026-10-31T08:16:00"
- },
- "m1-ru": {
-  "permalink": "https://www.instagram.com/reel/DfKHtvFCejn/",
-  "at": "2026-10-31T12:08:16"
- },
- "m1-kk": {
-  "permalink": "https://www.instagram.com/reel/DfKN88XlCNj/",
-  "at": "2026-10-31T13:03:00"
- },
- "m1-ru-vo": {
-  "permalink": "https://www.instagram.com/reel/DfKOry2iuB7/",
-  "at": "2026-10-31T13:09:32"
- }
+  "p01": {
+    "permalink": "https://www.instagram.com/p/De9JZEPoJwr/",
+    "at": "2026-10-26T11:12:33"
+  },
+  "p01:story": {
+    "permalink": "https://www.instagram.com/stories/jumysker_ai/4016419246506931968",
+    "at": "2026-10-26T11:35:22"
+  },
+  "r1": {
+    "permalink": "https://www.instagram.com/reel/De_ZLV3ANXv/",
+    "at": "2026-10-27T08:09:06"
+  },
+  "r1:story": {
+    "permalink": "https://www.instagram.com/stories/jumysker_ai/4017051310755329838",
+    "at": "2026-10-27T08:31:29"
+  },
+  "r11": {
+    "permalink": "https://www.instagram.com/reel/DfHDfF8Dcgx/",
+    "at": "2026-10-30T07:33:42"
+  },
+  "r11:story": {
+    "permalink": "https://www.instagram.com/stories/jumysker_ai/4019223513331986140",
+    "at": "2026-10-30T08:27:19"
+  },
+  "r3": {
+    "permalink": "https://www.instagram.com/reel/DfJqkAtgiWR/",
+    "at": "2026-10-31T07:53:46"
+  },
+  "r3:story": {
+    "permalink": "https://www.instagram.com/stories/jumysker_ai/4019942630292019108",
+    "at": "2026-10-31T08:16:00"
+  },
+  "m1-ru": {
+    "permalink": "https://www.instagram.com/reel/DfKHtvFCejn/",
+    "at": "2026-10-31T12:08:16"
+  },
+  "m1-kk": {
+    "permalink": "https://www.instagram.com/reel/DfKN88XlCNj/",
+    "at": "2026-10-31T13:03:00"
+  },
+  "m1-ru-vo": {
+    "permalink": "https://www.instagram.com/reel/DfKOry2iuB7/",
+    "at": "2026-10-31T13:09:32"
+  },
+  "m1-kk-vo": {
+    "permalink": "https://www.instagram.com/reel/DfKjff5jQeG/",
+    "at": "2026-10-31T16:10Z"
+  }
 }
