@@ -1,261 +1,261 @@
 [
- {
-  "id": "p01",
-  "date": "2026-10-28",
-  "kind": "carousel",
-  "title": "Знакомьтесь: Jumysker",
-  "lang": "RU",
-  "files": [
-   "posts/p01/slide-01.jpg",
-   "posts/p01/slide-02.jpg",
-   "posts/p01/slide-03.jpg",
-   "posts/p01/slide-04.jpg",
-   "posts/p01/slide-05.jpg",
-   "posts/p01/slide-06.jpg",
-   "posts/p01/slide-07.jpg"
-  ],
-  "caption": "posts/p01/caption.txt",
-  "story": "stories/p01-story.jpg",
-  "ready": true
- },
- {
-  "id": "r1",
-  "date": "2026-10-29",
-  "kind": "reel",
-  "title": "Счёт клиенту за минуту",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r1-erlan.mp4"
-  ],
-  "cover": "reels/r1-erlan-cover.jpg",
-  "caption": "reels/r1-caption.txt",
-  "story": "stories/r1-story.mp4",
-  "ready": true
- },
- {
-  "id": "r11",
-  "date": "2026-10-30",
-  "kind": "reel",
-  "title": "25 көмекші — бір қосымшада",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r11-dana.mp4"
-  ],
-  "cover": "reels/r11-dana-cover.jpg",
-  "caption": "reels/r11-caption.txt",
-  "story": "stories/r11-story.mp4",
-  "ready": true
- },
- {
-  "id": "r3",
-  "date": "2026-10-31",
-  "kind": "reel",
-  "title": "Сайт для салона из одного сообщения",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r3-erlan.mp4"
-  ],
-  "cover": "reels/r3-erlan-cover.jpg",
-  "caption": "reels/r3-caption.txt",
-  "story": "stories/r3-story.mp4",
-  "ready": true
- },
- {
-  "id": "r4",
-  "date": "2026-11-01",
-  "kind": "reel",
-  "title": "Прайсты қазақшаға — бір минутта",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r4-dana.mp4"
-  ],
-  "cover": "reels/r4-dana-cover.jpg",
-  "caption": "reels/r4-caption.txt",
-  "story": "stories/r4-story.mp4",
-  "ready": false
- },
- {
-  "id": "r7",
-  "date": "2026-11-02",
-  "kind": "reel",
-  "title": "Клиент пишет «дорого»",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r7-erlan.mp4"
-  ],
-  "cover": "reels/r7-erlan-cover.jpg",
-  "caption": "reels/r7-caption.txt",
-  "story": "stories/r7-story.mp4",
-  "ready": false
- },
- {
-  "id": "r6",
-  "date": "2026-11-03",
-  "kind": "reel",
-  "title": "Шартқа қол қояр алдында",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r6-dana.mp4"
-  ],
-  "cover": "reels/r6-dana-cover.jpg",
-  "caption": "reels/r6-caption.txt",
-  "story": "stories/r6-story.mp4",
-  "ready": false
- },
- {
-  "id": "r12",
-  "date": "2026-11-04",
-  "kind": "reel",
-  "title": "Налог за полгода — без подписки",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r12-erlan.mp4"
-  ],
-  "cover": "reels/r12-erlan-cover.jpg",
-  "caption": "reels/r12-caption.txt",
-  "story": "stories/r12-story.mp4",
-  "ready": false
- },
- {
-  "id": "r10",
-  "date": "2026-11-05",
-  "kind": "reel",
-  "title": "Шенген визасына сауалнама",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r10-dana.mp4"
-  ],
-  "cover": "reels/r10-dana-cover.jpg",
-  "caption": "reels/r10-caption.txt",
-  "story": "stories/r10-story.mp4",
-  "ready": false
- },
- {
-  "id": "r5",
-  "date": "2026-11-06",
-  "kind": "reel",
-  "title": "Ответ на плохой отзыв за 20 секунд",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r5-erlan.mp4"
-  ],
-  "cover": "reels/r5-erlan-cover.jpg",
-  "caption": "reels/r5-caption.txt",
-  "story": "stories/r5-story.mp4",
-  "ready": false
- },
- {
-  "id": "r8",
-  "date": "2026-11-07",
-  "kind": "reel",
-  "title": "Жеке турагент",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r8-dana.mp4"
-  ],
-  "cover": "reels/r8-dana-cover.jpg",
-  "caption": "reels/r8-caption.txt",
-  "story": "stories/r8-story.mp4",
-  "ready": false
- },
- {
-  "id": "r9",
-  "date": "2026-11-08",
-  "kind": "reel",
-  "title": "Машина с рук без переплаты",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r9-erlan.mp4"
-  ],
-  "cover": "reels/r9-erlan-cover.jpg",
-  "caption": "reels/r9-caption.txt",
-  "story": "stories/r9-story.mp4",
-  "ready": false
- },
- {
-  "id": "r13",
-  "date": "2026-11-09",
-  "kind": "reel",
-  "title": "Бос орынға хабарландыру — бір минутта",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r13-dana.mp4"
-  ],
-  "cover": "reels/r13-dana-cover.jpg",
-  "caption": "reels/r13-caption.txt",
-  "story": "stories/r13-story.mp4",
-  "ready": false
- },
- {
-  "id": "r14",
-  "date": "2026-11-10",
-  "kind": "reel",
-  "title": "Госзакупки: чек-лист заявки",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r14-erlan.mp4"
-  ],
-  "cover": "reels/r14-erlan-cover.jpg",
-  "caption": "reels/r14-caption.txt",
-  "story": "stories/r14-story.mp4",
-  "ready": false
- },
- {
-  "id": "r15",
-  "date": "2026-11-11",
-  "kind": "reel",
-  "title": "Пәтерді артық төлемей таңдау",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r15-dana.mp4"
-  ],
-  "cover": "reels/r15-dana-cover.jpg",
-  "caption": "reels/r15-caption.txt",
-  "story": "stories/r15-story.mp4",
-  "ready": false
- },
- {
-  "id": "r16",
-  "date": "2026-11-12",
-  "kind": "reel",
-  "title": "Помощники, которые работают командой",
-  "lang": "RU",
-  "host": "Ерлан",
-  "files": [
-   "reels/r16-erlan.mp4"
-  ],
-  "cover": "reels/r16-erlan-cover.jpg",
-  "caption": "reels/r16-caption.txt",
-  "story": "stories/r16-story.mp4",
-  "ready": false
- },
- {
-  "id": "r17",
-  "date": "2026-11-13",
-  "kind": "reel",
-  "title": "Бір айлық контент-жоспар",
-  "lang": "KZ",
-  "host": "Дана",
-  "files": [
-   "reels/r17-dana.mp4"
-  ],
-  "cover": "reels/r17-dana-cover.jpg",
-  "caption": "reels/r17-caption.txt",
-  "story": "stories/r17-story.mp4",
-  "ready": false
- }
+  {
+    "id": "p01",
+    "date": "2026-10-28",
+    "kind": "carousel",
+    "title": "Знакомьтесь: Jumysker",
+    "lang": "RU",
+    "files": [
+      "posts/p01/slide-01.jpg",
+      "posts/p01/slide-02.jpg",
+      "posts/p01/slide-03.jpg",
+      "posts/p01/slide-04.jpg",
+      "posts/p01/slide-05.jpg",
+      "posts/p01/slide-06.jpg",
+      "posts/p01/slide-07.jpg"
+    ],
+    "caption": "posts/p01/caption.txt",
+    "story": "stories/p01-story.jpg",
+    "ready": true
+  },
+  {
+    "id": "r1",
+    "date": "2026-10-29",
+    "kind": "reel",
+    "title": "Счёт клиенту за минуту",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r1-erlan.mp4"
+    ],
+    "cover": "reels/r1-erlan-cover.jpg",
+    "caption": "reels/r1-caption.txt",
+    "story": "stories/r1-story.mp4",
+    "ready": true
+  },
+  {
+    "id": "r11",
+    "date": "2026-10-30",
+    "kind": "reel",
+    "title": "25 көмекші — бір қосымшада",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r11-dana.mp4"
+    ],
+    "cover": "reels/r11-dana-cover.jpg",
+    "caption": "reels/r11-caption.txt",
+    "story": "stories/r11-story.mp4",
+    "ready": true
+  },
+  {
+    "id": "r3",
+    "date": "2026-10-31",
+    "kind": "reel",
+    "title": "Сайт для салона из одного сообщения",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r3-erlan.mp4"
+    ],
+    "cover": "reels/r3-erlan-cover.jpg",
+    "caption": "reels/r3-caption.txt",
+    "story": "stories/r3-story.mp4",
+    "ready": true
+  },
+  {
+    "id": "r4",
+    "date": "2026-11-01",
+    "kind": "reel",
+    "title": "Прайсты қазақшаға — бір минутта",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r4-dana.mp4"
+    ],
+    "cover": "reels/r4-dana-cover.jpg",
+    "caption": "reels/r4-caption.txt",
+    "story": "stories/r4-story.mp4",
+    "ready": true
+  },
+  {
+    "id": "r7",
+    "date": "2026-11-02",
+    "kind": "reel",
+    "title": "Клиент пишет «дорого»",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r7-erlan.mp4"
+    ],
+    "cover": "reels/r7-erlan-cover.jpg",
+    "caption": "reels/r7-caption.txt",
+    "story": "stories/r7-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r6",
+    "date": "2026-11-03",
+    "kind": "reel",
+    "title": "Шартқа қол қояр алдында",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r6-dana.mp4"
+    ],
+    "cover": "reels/r6-dana-cover.jpg",
+    "caption": "reels/r6-caption.txt",
+    "story": "stories/r6-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r12",
+    "date": "2026-11-04",
+    "kind": "reel",
+    "title": "Налог за полгода — без подписки",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r12-erlan.mp4"
+    ],
+    "cover": "reels/r12-erlan-cover.jpg",
+    "caption": "reels/r12-caption.txt",
+    "story": "stories/r12-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r10",
+    "date": "2026-11-05",
+    "kind": "reel",
+    "title": "Шенген визасына сауалнама",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r10-dana.mp4"
+    ],
+    "cover": "reels/r10-dana-cover.jpg",
+    "caption": "reels/r10-caption.txt",
+    "story": "stories/r10-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r5",
+    "date": "2026-11-06",
+    "kind": "reel",
+    "title": "Ответ на плохой отзыв за 20 секунд",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r5-erlan.mp4"
+    ],
+    "cover": "reels/r5-erlan-cover.jpg",
+    "caption": "reels/r5-caption.txt",
+    "story": "stories/r5-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r8",
+    "date": "2026-11-07",
+    "kind": "reel",
+    "title": "Жеке турагент",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r8-dana.mp4"
+    ],
+    "cover": "reels/r8-dana-cover.jpg",
+    "caption": "reels/r8-caption.txt",
+    "story": "stories/r8-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r9",
+    "date": "2026-11-08",
+    "kind": "reel",
+    "title": "Машина с рук без переплаты",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r9-erlan.mp4"
+    ],
+    "cover": "reels/r9-erlan-cover.jpg",
+    "caption": "reels/r9-caption.txt",
+    "story": "stories/r9-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r13",
+    "date": "2026-11-09",
+    "kind": "reel",
+    "title": "Бос орынға хабарландыру — бір минутта",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r13-dana.mp4"
+    ],
+    "cover": "reels/r13-dana-cover.jpg",
+    "caption": "reels/r13-caption.txt",
+    "story": "stories/r13-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r14",
+    "date": "2026-11-10",
+    "kind": "reel",
+    "title": "Госзакупки: чек-лист заявки",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r14-erlan.mp4"
+    ],
+    "cover": "reels/r14-erlan-cover.jpg",
+    "caption": "reels/r14-caption.txt",
+    "story": "stories/r14-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r15",
+    "date": "2026-11-11",
+    "kind": "reel",
+    "title": "Пәтерді артық төлемей таңдау",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r15-dana.mp4"
+    ],
+    "cover": "reels/r15-dana-cover.jpg",
+    "caption": "reels/r15-caption.txt",
+    "story": "stories/r15-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r16",
+    "date": "2026-11-12",
+    "kind": "reel",
+    "title": "Помощники, которые работают командой",
+    "lang": "RU",
+    "host": "Ерлан",
+    "files": [
+      "reels/r16-erlan.mp4"
+    ],
+    "cover": "reels/r16-erlan-cover.jpg",
+    "caption": "reels/r16-caption.txt",
+    "story": "stories/r16-story.mp4",
+    "ready": false
+  },
+  {
+    "id": "r17",
+    "date": "2026-11-13",
+    "kind": "reel",
+    "title": "Бір айлық контент-жоспар",
+    "lang": "KZ",
+    "host": "Дана",
+    "files": [
+      "reels/r17-dana.mp4"
+    ],
+    "cover": "reels/r17-dana-cover.jpg",
+    "caption": "reels/r17-caption.txt",
+    "story": "stories/r17-story.mp4",
+    "ready": false
+  }
 ]
