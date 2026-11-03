@@ -121,7 +121,7 @@
   "cover": "reels/r12-erlan-cover.jpg",
   "caption": "reels/r12-caption.txt",
   "story": "stories/r12-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r10",
