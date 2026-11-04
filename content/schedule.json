@@ -136,7 +136,7 @@
   "cover": "reels/r10-dana-cover.jpg",
   "caption": "reels/r10-caption.txt",
   "story": "stories/r10-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r5",

@@ -54,8 +54,28 @@ def nbsp(text):
     return re.sub(r"(?<![\w-])([А-Яа-яЁёӘәҒғҚқҢңӨөҰұҮүІі]{1,2}) ", "\\1\u00a0", text)
 
 
+def merge_multi(words):
+    """Склеить слова из многословных DISPLAY («он мың бес жүз» → «10 500»), чтобы число не разрывалось субтитром."""
+    multi = sorted(((a.split(), b) for a, b in DISPLAY if " " in a), key=lambda x: -len(x[0]))
+    out, i = [], 0
+    while i < len(words):
+        for parts, b in multi:
+            seg = words[i:i + len(parts)]
+            if len(seg) == len(parts) and all(w["w"].rstrip(".,!?:;—").lower() == p.lower() for w, p in zip(seg[:-1], parts[:-1])) \
+                    and seg[-1]["w"].rstrip(".,!?:;—").lower() == parts[-1].lower():
+                last = seg[-1]["w"]
+                tail = last[len(last.rstrip(".,!?:;—")):]
+                out.append({**seg[0], "w": b.replace(" ", "\u00a0") + tail, "e": seg[-1].get("e", seg[0].get("e"))})
+                i += len(parts)
+                break
+        else:
+            out.append(words[i]); i += 1
+    return out
+
+
 def phrases(words, offset, limit=28):
     """Субтитры: режем по знакам препинания; длинное — по словам, но не оставляем «хвостик» в 1–2 слова."""
+    words = merge_multi(words)
     out, cur = [], []
     for i, w in enumerate(words):
         cur.append(w)
