@@ -151,7 +151,7 @@
   "cover": "reels/r5-erlan-cover.jpg",
   "caption": "reels/r5-caption.txt",
   "story": "stories/r5-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r8",
