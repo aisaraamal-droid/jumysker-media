@@ -166,7 +166,7 @@
   "cover": "reels/r8-dana-cover.jpg",
   "caption": "reels/r8-caption.txt",
   "story": "stories/r8-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r9",
