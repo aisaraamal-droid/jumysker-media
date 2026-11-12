@@ -69,7 +69,12 @@ def merge_multi(words):
                 i += len(parts)
                 break
         else:
-            out.append(words[i]); i += 1
+            w = words[i]
+            if w["w"] in ("—", "–") and out:  # тире не отрываем от предыдущего слова
+                out[-1] = {**out[-1], "w": out[-1]["w"] + "\u00a0" + w["w"], "e": w.get("e", out[-1].get("e"))}
+            else:
+                out.append(w)
+            i += 1
     return out
 
 
