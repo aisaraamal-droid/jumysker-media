@@ -271,7 +271,7 @@
   "cover": "reels/r18-erlan-cover.jpg",
   "caption": "reels/r18-caption.txt",
   "story": "stories/r18-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r19",
