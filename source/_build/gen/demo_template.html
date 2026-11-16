@@ -127,5 +127,15 @@ window.renderHost = function (t, visible) {
   document.getElementById('sub').style.display = s ? '' : 'none';
 };
 window.setFrame = src => new Promise(res => { const im = document.getElementById('hostimg'); im.onload = () => res(); im.src = src; });
+// если переписка с документом не помещается в окно чата — уменьшаем шрифт сообщений
+(function fit() {
+  const box = document.getElementById('msgs'), dots = document.getElementById('dots');
+  const els = ['m0', 'm1', 'doc'].map(id => document.getElementById(id));
+  els.forEach(e => e.style.display = ''); dots.style.display = 'none';
+  let fs = 37;
+  while (box.scrollHeight > box.clientHeight + 1 && fs > 30) {
+    fs -= 1; document.querySelectorAll('.msg').forEach(m => m.style.fontSize = fs + 'px');
+  }
+})();
 window.render(0);
 </script></body></html>
