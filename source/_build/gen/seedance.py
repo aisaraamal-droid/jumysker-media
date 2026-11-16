@@ -10,9 +10,9 @@ for spec in sys.argv[5:]:
     mt = mimetypes.guess_type(path)[0] or ("audio/mpeg" if kind == "audio" else "image/png")
     url = f"data:{mt};base64," + base64.b64encode(open(path, "rb").read()).decode()
     content.append({"type": f"{kind}_url", f"{kind}_url": {"url": url}, "role": role})
-if "mini" in model:  # Арслан, 16.11: генерацию на Mini в 480p–720p не использовать
-    sys.exit("seedance: модель Mini в 480p/720p запрещена — выберите другую модель")
-body = {"model": model, "content": content, "resolution": "720p", "ratio": "9:16", "duration": duration,
+RES = "480p" if "mini" in model else "720p"  # Арслан, 16.11: Mini только в 480p, Mini 720p не использовать
+assert RES != "1080p" and not ("mini" in model and RES != "480p")  # 1080p не используем вообще
+body = {"model": model, "content": content, "resolution": RES, "ratio": "9:16", "duration": duration,
         "generate_audio": __import__("os").environ.get("SEEDANCE_AUDIO", "0") == "1", "watermark": False}
 def call(req):
     try:

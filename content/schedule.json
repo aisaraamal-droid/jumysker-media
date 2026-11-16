@@ -316,7 +316,7 @@
   "cover": "reels/r21-dana-cover.jpg",
   "caption": "reels/r21-caption.txt",
   "story": "stories/r21-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r22",
@@ -331,7 +331,7 @@
   "cover": "reels/r22-erlan-cover.jpg",
   "caption": "reels/r22-caption.txt",
   "story": "stories/r22-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r23",
