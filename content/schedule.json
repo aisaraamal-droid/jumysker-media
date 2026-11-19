@@ -334,6 +334,21 @@
   "ready": true
  },
  {
+  "id": "w1",
+  "date": "2026-11-19",
+  "kind": "reel",
+  "title": "Сайт «Алтын Бал» от Веб-разработчика",
+  "lang": "RU",
+  "host": "—",
+  "files": [
+   "reels/w1-webdev.mp4"
+  ],
+  "cover": "reels/w1-webdev-cover.jpg",
+  "caption": "reels/w1-caption.txt",
+  "story": "stories/w1-story.mp4",
+  "ready": true
+ },
+ {
   "id": "r23",
   "date": "2026-11-19",
   "kind": "reel",
