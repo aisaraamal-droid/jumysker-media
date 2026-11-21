@@ -391,7 +391,7 @@
   "cover": "reels/r25-dana-cover.jpg",
   "caption": "reels/r25-caption.txt",
   "story": "stories/r25-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r26",
