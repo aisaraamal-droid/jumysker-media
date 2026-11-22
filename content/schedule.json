@@ -406,7 +406,7 @@
   "cover": "reels/r26-erlan-cover.jpg",
   "caption": "reels/r26-caption.txt",
   "story": "stories/r26-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r27",
