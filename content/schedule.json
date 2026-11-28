@@ -466,7 +466,7 @@
   "cover": "reels/r30-erlan-cover.jpg",
   "caption": "reels/r30-caption.txt",
   "story": "stories/r30-story.mp4",
-  "ready": false
+  "ready": true
  },
  {
   "id": "r31",
